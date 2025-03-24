@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Module configy.backend.node</title>
+		<link rel="stylesheet" type="text/css" href="../../styles/ddox.css"/>
+		<link rel="stylesheet" href="../../prettify/prettify.css" type="text/css"/>
+		<script type="text/javascript" src="../../scripts/jquery.js">/**/</script><script type="text/javascript" src="../../scripts/ddox.js">/**/</script>
+	</head>
+	<body onload="setupDdox();">
+		<nav id="main-nav">
+			<noscript>
+				<p style="color: red">The search functionality needs JavaScript enabled</p>
+			</noscript>
+			<div id="symbolSearchPane" style="display: none">
+				<form action="#" method="GET">
+					<input id="symbolSearch" type="text" name="q" placeholder="Search for symbols" autocomplete="off" onchange="performSymbolSearch(40);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/>
+				</form>
+				<ul id="symbolSearchResults" class="symbolList" style="display: none"></ul><script type="application/javascript" src="../../symbols.js"></script><script type="application/javascript">var symbolSearchRootDir = "../../";
+$('#symbolSearchPane').show();</script>
+			</div>
+			<ul class="tree-view">
+				<li class="tree-view ">
+					<div class="package ">configy
+					</div>
+			<ul class="tree-view">
+				<li class="tree-view ">
+					<div class="package ">backend
+					</div>
+			<ul class="tree-view">
+				<li>
+					<div class="module selected">
+						<a href="../../configy/backend/node.html">node</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../configy/backend/yaml.html">yaml</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../configy/attributes.html">attributes</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../configy/exceptions.html">exceptions</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../configy/fieldref.html">fieldref</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../configy/read.html">read</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../configy/utils.html">utils</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+			</ul>
+		</nav>
+		<div id="main-contents">
+			<h1>Module configy.backend.node</h1><p>Abstract away the underlying node type implementation
+</p><section><p>While Configy was originally written to be a YAML configuration parser,
+    it has been extended to support other kind of configuration.
+    All one needs is to define a class overriding <code class="lang-d"><span class="typ">ConfigNode</span></code> and implementing
+    the appropriate methods.
+</p>
+</section>
+
+			<section></section>
+			<section>
+				<h2>Functions</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<code>
+								<a id="toString" class="public" href="../../configy/backend/node/to_string.html">toString</a><span class="tableEntryAnnotation">(type)</span>
+							</code>
+						</td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section>
+				<h2>Interfaces</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<code>
+								<a id="Mapping" class="public" href="../../configy/backend/node/mapping.html">Mapping</a>
+							</code>
+						</td>
+						<td>Represent a mapping / object in a document
+</td>
+					</tr>
+					<tr>
+						<td>
+							<code>
+								<a id="Node" class="public" href="../../configy/backend/node/node.html">Node</a>
+							</code>
+						</td>
+						<td>An abstract <code class="lang-d"><span class="typ">Node</span></code> in a structured document
+</td>
+					</tr>
+					<tr>
+						<td>
+							<code>
+								<a id="Scalar" class="public" href="../../configy/backend/node/scalar.html">Scalar</a>
+							</code>
+						</td>
+						<td>Represent a scalar: anything that can be represented as a simple string
+</td>
+					</tr>
+					<tr>
+						<td>
+							<code>
+								<a id="Sequence" class="public" href="../../configy/backend/node/sequence.html">Sequence</a>
+							</code>
+						</td>
+						<td>Represent a sequence / array in a document
+</td>
+					</tr>
+				</table>
+			</section>
+			<section>
+				<h2>Structs</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<code>
+								<a id="Location" class="public" href="../../configy/backend/node/location.html">Location</a>
+							</code>
+						</td>
+						<td>The location of the node in the file (if there is a file)
+</td>
+					</tr>
+				</table>
+			</section>
+			<footer>
+				<table class="license-info">
+					<tr>
+						<th>Authors</th>
+						<td>
+							
+						</td>
+					</tr>
+					<tr>
+						<th>Copyright</th>
+						<td>
+							
+						</td>
+					</tr>
+					<tr>
+						<th>License</th>
+						<td>
+							
+						</td>
+					</tr>
+				</table>
+				<p class="faint">Generated using the DDOX documentation generator</p>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Module configy.backend.yaml</title>
+		<link rel="stylesheet" type="text/css" href="../../styles/ddox.css"/>
+		<link rel="stylesheet" href="../../prettify/prettify.css" type="text/css"/>
+		<script type="text/javascript" src="../../scripts/jquery.js">/**/</script><script type="text/javascript" src="../../scripts/ddox.js">/**/</script>
+	</head>
+	<body onload="setupDdox();">
+		<nav id="main-nav">
+			<noscript>
+				<p style="color: red">The search functionality needs JavaScript enabled</p>
+			</noscript>
+			<div id="symbolSearchPane" style="display: none">
+				<form action="#" method="GET">
+					<input id="symbolSearch" type="text" name="q" placeholder="Search for symbols" autocomplete="off" onchange="performSymbolSearch(40);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/>
+				</form>
+				<ul id="symbolSearchResults" class="symbolList" style="display: none"></ul><script type="application/javascript" src="../../symbols.js"></script><script type="application/javascript">var symbolSearchRootDir = "../../";
+$('#symbolSearchPane').show();</script>
+			</div>
+			<ul class="tree-view">
+				<li class="tree-view ">
+					<div class="package ">configy
+					</div>
+			<ul class="tree-view">
+				<li class="tree-view ">
+					<div class="package ">backend
+					</div>
+			<ul class="tree-view">
+				<li>
+					<div class="module ">
+						<a href="../../configy/backend/node.html">node</a>
+					</div>
+				</li>
+				<li>
+					<div class="module selected">
+						<a href="../../configy/backend/yaml.html">yaml</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../configy/attributes.html">attributes</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../configy/exceptions.html">exceptions</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../configy/fieldref.html">fieldref</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../configy/read.html">read</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../configy/utils.html">utils</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+			</ul>
+		</nav>
+		<div id="main-contents">
+			<h1>Module configy.backend.yaml</h1><p>A backend that can parse YAML (and JSON) documents
+</p><section><p>This is the original backend for Configy: it can parse YAML document
+    (and JSON which YAML is a superset of). It uses D-YAML as a backend itself.
+</p>
+</section>
+
+			<section></section>
+			<section>
+				<h2>Functions</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<code>
+								<a id="parseFile" class="public" href="../../configy/backend/yaml/parse_file.html">parseFile</a><span class="tableEntryAnnotation">(path)</span>
+							</code>
+						</td>
+						<td>Parses a file at <code class="lang-d"><a href="../../configy/backend/yaml/parse_file.html#path"><span class="pln">path</span></a></code> and return a node suitable for <code class="lang-d"><span class="pln">parseConfig</span></code>
+</td>
+					</tr>
+					<tr>
+						<td>
+							<code>
+								<a id="parseString" class="public" href="../../configy/backend/yaml/parse_string.html">parseString</a><span class="tableEntryAnnotation">(content, path)</span>
+							</code>
+						</td>
+						<td>Parses YAML <code class="lang-d"><a href="../../configy/backend/yaml/parse_string.html#content"><span class="pln">content</span></a></code> and return a node suitable for <code class="lang-d"><span class="pln">parseConfig</span></code>
+</td>
+					</tr>
+				</table>
+			</section>
+			<section>
+				<h2>Classes</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<code>
+								<a id="YAMLMapping" class="public" href="../../configy/backend/yaml/yaml_mapping.html">YAMLMapping</a>
+							</code>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<code>
+								<a id="YAMLNode" class="public" href="../../configy/backend/yaml/yaml_node.html">YAMLNode</a>
+							</code>
+						</td>
+						<td>The base class for all YAML nodes
+</td>
+					</tr>
+					<tr>
+						<td>
+							<code>
+								<a id="YAMLScalar" class="public" href="../../configy/backend/yaml/yaml_scalar.html">YAMLScalar</a>
+							</code>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<code>
+								<a id="YAMLSequence" class="public" href="../../configy/backend/yaml/yaml_sequence.html">YAMLSequence</a>
+							</code>
+						</td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<footer>
+				<table class="license-info">
+					<tr>
+						<th>Authors</th>
+						<td>
+							
+						</td>
+					</tr>
+					<tr>
+						<th>Copyright</th>
+						<td>
+							
+						</td>
+					</tr>
+					<tr>
+						<th>License</th>
+						<td>
+							
+						</td>
+					</tr>
+				</table>
+				<p class="faint">Generated using the DDOX documentation generator</p>
+			</footer>
+		</div>
+	</body>
+</html>
